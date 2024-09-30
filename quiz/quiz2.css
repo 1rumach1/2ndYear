@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('tech.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.quiz-container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quiz-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #FDFFC2;
+}
+#quiz-timer {
+    background-color: #000000;
+    border: 2px solid #a70606;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.3em;
+    color: #ff0000;
+    display: none;
+    width: 19%;
+    float: right;
+}
+.quiz-header h4 {
+    margin: 5px 0;
+    color: #FDFFC2;
+}
+.quiz-card {
+    background-color: #FDFFC2;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.quiz-card label {
+    font-size: 1.2em;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+.quiz-card input {
+    width: 95%;
+    background-color: #FDFFC2;
+    color: #000000; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 1.2em;
+}
+.quiz-card select {
+    width: 95%;
+    background-color: #FDFFC2;
+    color: #000000; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 1.2em;
+}
+.submit-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 40%;
+    float: right;
+}
+.submit-button:hover {
+    background-color: #ea0000;
+}
+#quiz-form {
+    display: none;
+}
+
