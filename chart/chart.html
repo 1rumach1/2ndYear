@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIPA CITY COLLEGES Student Count by Department</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <button onclick="location.href='../menu/menu.html'">Menu</button>
+    <div >
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        const myChart = document.getElementById('myChart').getContext('2d');
+        new Chart(myChart, {
+            type: 'bar',
+            data: {
+                labels: ['CS', 'CE', 'CBA', 'COC', 'CELA', 'CITHM'],
+                datasets: [{
+                    label: 'Number of Students',
+                    data: [60, 70, 130, 435, 120, 220],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 3)',
+                        'rgba(54, 162, 235, 3)',
+                        'rgba(255, 206, 86, 3)',
+                        'rgba(75, 192, 192, 3)',
+                        'rgba(153, 102, 255, 3)',
+                        'rgba(255, 159, 64, 3)'
+                    ],
+                    borderWidth: 3,
+                    hoverBorderColor: 'black',
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'NUMBER OF STUDENTS',
+                            color: '#fff'
+                        },
+                        ticks: {
+                            color: '#fff'
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.5)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'COLLEGE DEPARTMENTS',
+                            color: '#fff'
+                        },
+                        ticks: {
+                            color: '#fff'
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.5)'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'LIPA CITY COLLEGES Student Count by Department',
+                        font: {
+                            size: 20
+                        },
+                        color: '#fff'
+                    },
+                    legend: {
+                        labels: {
+                            color: '#fff'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
